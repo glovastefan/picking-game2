@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pick The Product</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Pick All Products</h1>
+      <audio class="music" autoplay><source src="Media/bass.wav" /></audio>
+
+      <input
+        type="text"
+        id="name"
+        class="name"
+        placeholder="Enter You Name, you Picker!"
+      />
+      <button class="btn" id="start-btn">Start The Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>What is your favorite product?</h1>
+      <ul class="product-list">
+        <li>
+          <button class="choose-favorite-btn">
+            <p>UG402</p>
+            <img src="Media/UG402.png" alt="UG402" />
+          </button>
+        </li>
+        <li>
+          <button class="choose-favorite-btn">
+            <p>UG431</p>
+            <img src="Media/UG431.png" alt="UG431" />
+          </button>
+        </li>
+        <li>
+          <button class="choose-favorite-btn">
+            <p>UG460</p>
+            <img src="Media/UG460.png" alt="UG460" />
+          </button>
+        </li>
+        <li>
+          <button class="choose-favorite-btn">
+            <p>UG483</p>
+            <img src="Media/UG483.png" alt="UG483" />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <input
+        type="button"
+        class="restart"
+        value="Reset Game"
+        onclick="window.location.reload(true)"
+      />
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Get a GRIPPPP... <br />
+        Pick faster!!
+      </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
